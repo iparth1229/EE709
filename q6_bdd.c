@@ -6,17 +6,17 @@ int main (int argc, char* argv[])
 {
 	bdd_manager bddm = bdd_init();	
 
-	// make 3 variables 
+	// create variables 
 	bdd s3 = bdd_new_var_last(bddm);
 	bdd s2 = bdd_new_var_last(bddm);
 	bdd s1 = bdd_new_var_last(bddm);
         bdd s0 = bdd_new_var_last(bddm);
-        bdd t1 = bdd_new_var_last(bddm);
+        
+	bdd t1 = bdd_new_var_last(bddm);
         bdd t0 = bdd_new_var_last(bddm);
 
         bdd r = bdd_new_var_last(bddm);
         bdd x = bdd_new_var_last(bddm);
-
 
 	
 
