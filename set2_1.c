@@ -8,6 +8,7 @@ int main (int argc, char* argv[])
 
 	// make variables
 	
+	
 	bdd u3 = bdd_new_var_last(bddm);
 	bdd u2 = bdd_new_var_last(bddm);
 	bdd u1 = bdd_new_var_last(bddm);
