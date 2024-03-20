@@ -6,7 +6,7 @@ int main (int argc, char* argv[])
 {
 	bdd_manager bddm = bdd_init();	
 
-	// make 3 variables x0,x1,x2 (in that order)
+	// make variables
 	
 	bdd u3 = bdd_new_var_last(bddm);
 	bdd u2 = bdd_new_var_last(bddm);
@@ -14,7 +14,7 @@ int main (int argc, char* argv[])
 	bdd u0 = bdd_new_var_last(bddm);
 	
 
-	// compute y = (x0.x1)+x2
+	// specification
 	bdd bu3=bdd_not (bddm,u3);
 	bdd bu2=bdd_not (bddm,u2);
 	bdd bu1=bdd_not (bddm,u1);
@@ -33,9 +33,8 @@ int main (int argc, char* argv[])
         e=bdd_or(bddm,e,t4);
 	
 	bdd c0=bdd_or(bddm,u3,t4);  
-	//jaydev
-
 	
+	// implementation
 
 	//e and c1
 	bdd a   = bdd_or (bddm,u0,u1);	
