@@ -57,11 +57,11 @@ int main (int argc, char* argv[])
 	// are z and y the same?
 	if (y1state==y2state)
 	{
-		printf("Equal at k=0, so proceed with k = 1\n");
+		printf("Product machine is Equal at k=0, so proceed with k = 1\n");
 	}	
 	else
 	{
-		printf("Not Equal at k=0 , so stopped");
+		printf("Product machine is Not Equal at k=0 , so stopped \n");
 }
 
 	return(0);
