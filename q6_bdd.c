@@ -57,11 +57,11 @@ int main (int argc, char* argv[])
 	// are z and y the same?
 	if (y1state==y2state)
 	{
-		printf("Equal\n");
+		printf("Equal at k=0, so proceed with k = 1\n");
 	}	
 	else
 	{
-		printf("Not Equal");
+		printf("Not Equal at k=0 , so stopped");
 }
 
 	return(0);
