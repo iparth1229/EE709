@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <bdduser.h>
 
+// Q1 -> 2
 int main (int argc, char* argv[])
 {
 	bdd_manager bddm = bdd_init();	
