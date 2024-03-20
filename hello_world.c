@@ -6,7 +6,6 @@ int main (int argc, char* argv[])
 {
 	bdd_manager bddm = bdd_init();	
 
-	// make 3 variables x0,x1,x2, (in that order)
 	
 	bdd x1 = bdd_new_var_last(bddm);
 	bdd x2 = bdd_new_var_last(bddm);
@@ -16,7 +15,7 @@ int main (int argc, char* argv[])
 	bdd x6 = bdd_new_var_last(bddm);
 	
 
-	// compute y = (x0.x1)+x2
+	// compute
 	bdd a  = bdd_and (bddm,x1,x2);	
 	bdd b  = bdd_and (bddm,x3,x4);	
 	bdd c  = bdd_and (bddm,x5,x6);	
