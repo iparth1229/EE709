@@ -6,7 +6,7 @@ int main (int argc, char* argv[])
 {
 	bdd_manager bddm = bdd_init();	
 
-	// make 3 variables x0,x1,x2 (in that order)
+	// make 3 variables 
 	bdd s3 = bdd_new_var_last(bddm);
 	bdd s2 = bdd_new_var_last(bddm);
 	bdd s1 = bdd_new_var_last(bddm);
@@ -20,7 +20,7 @@ int main (int argc, char* argv[])
 
 	
 
-	// compute y = (x0.x1)+x2
+	// compute 
 	bdd rbar  = bdd_not (bddm,r);	
 	bdd rbarxand  = bdd_or (bddm,rbar,x);	
         bdd rand  = bdd_not (bddm,rbarxand);
@@ -36,7 +36,8 @@ int main (int argc, char* argv[])
         bdd s1bar   =bdd_not(bddm,s1);
         bdd t1bar   =bdd_not(bddm,t1);
         bdd t0bar   =bdd_not(bddm,t0);     
-	// compute z = (x0 + x2).(x1 + x2)
+
+	// compute 
 	bdd s3bars2bar = bdd_and (bddm, s3bar,s2bar);
 	bdd s3s2s1bar = bdd_and (bddm, s3bars2bar,s1bar);
 	bdd s3s2s1s0 = bdd_and (bddm, s3s2s1bar,s0);
